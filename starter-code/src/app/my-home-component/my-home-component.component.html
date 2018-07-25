@@ -1,0 +1,17 @@
+
+<img class="logo" src='https://cdn-images-1.medium.com/max/1200/1*69RcxrWXuk385lSxkIYYLA.png' width='200'>
+
+<div class="estilo">
+<div class="card" style="width: 18rem;" *ngFor="let movie of movies">
+  <h4 class="card-title">Room: {{movie.room}}</h4>
+
+  <img class="card-img-top" [src]="movie.poster" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">{{movie.title}}</h5>
+
+    <p class="card-text">Sinopsys: {{movie.synopsis}}</p>
+    <button  class="btn btn-primary"> See more! </button>
+    <a [routerLink] ="['/movie', movie.id]">Ver detalle</a>
+  </div>
+</div>
+</div>

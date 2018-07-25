@@ -1,0 +1,12 @@
+.estilo {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+}
